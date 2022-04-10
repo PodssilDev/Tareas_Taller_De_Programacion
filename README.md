@@ -1,4 +1,5 @@
-# Tareas_Taller_De_Programacion
+# Tareas Taller De Programacion 13315 2022-1
+
 Repositorio de las tareas de Taller de Programación 13315 de la Universidad de Santiago de Chile desarrolladas en el lenguaje C++
 
 ## Descripción
