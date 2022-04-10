@@ -1,0 +1,2 @@
+Esta tarea trata sobre el Algoritmo A* (Algoritmo A estrella) el cual realiza una busqueda en un laberinto generado aleatoriamente.
+El algoritmo esta creado en C++ a traves de la programación orientada a objetos.
