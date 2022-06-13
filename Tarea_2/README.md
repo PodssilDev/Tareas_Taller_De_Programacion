@@ -1,0 +1,2 @@
+Esta tarea esta basada en el algoritmo Branch and Bound y resuelve el problema de Jobs Assignment (Asignación de trabajos). El programa esta realizado en
+C++ utilizando la programación orientada a objetos.
