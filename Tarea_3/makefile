@@ -8,11 +8,17 @@ run: crearTxt.py test_corrupt main cargaTxt.py
 	./main
 	python3 cargaTxt.py
 
+runOptimizer: test_Optimizer
+	./test_Optimizer
+
+runImage: test_Image
+	./test_Image
+
 main: Objective.o Optimizer.o Image.o ImageProcessor.o Main.cpp
 	g++ $(FLAGS) -o main Main.cpp Objective.o Optimizer.o Image.o ImageProcessor.o
 
 test_Optimizer: Objective.o Optimizer.o test_Optimizer.cpp Image.o ImageProcessor.o
-	g++ $(FLAGS) -o test_Optimizer test_Optimizer.cpp Objective.o Optimizer.o Image.o ImageProcessor.o $(FLAGS)
+	g++ $(FLAGS) -o test_Optimizer test_Optimizer.cpp Objective.o Optimizer.o Image.o ImageProcessor.o
 
 test_corrupt: test_corrupt.cpp Image.o ImageProcessor.o 
 	g++ $(FLAGS) -o test_corrupt test_corrupt.cpp Image.o ImageProcessor.o

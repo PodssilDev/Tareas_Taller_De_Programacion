@@ -1,7 +1,8 @@
 # Tarea 4: Ciclos Hamiltonianos
 ## Descripción
 El problema consiste en realizar un algoritmo en C++ utilizando la Programación Orientada a Objetos, para encontrar un 
-Ciclo Hamiltoniano en un grafo génerado aleatoriamente con una cantidad de nodos especifica.<br/>
+Ciclo Hamiltoniano en un grafo génerado aleatoriamente con una cantidad de nodos especifica. Ya que se utiliza Makefile para facilitar
+la compilación, además de algunas bibliotecas exclusivas de Linux, es necesario que todo se pruebe en un Sistema Operativo Linux.<br/>
 
 Se tienen las siguientes clases:
 * [Clase Node](https://github.com/PodssilDev/Tareas_Taller_De_Programacion/blob/main/Tarea_4/Node.cpp): La clase “Node” representa a un nodo del grafo. Cada nodo tiene un numero asignado y un “valor” que corresponde
@@ -25,3 +26,6 @@ Para hacer el proceso de prueba rapido, se dispone de:
 * make runHamiltonian: Ejecuta ./test_Hamiltonian
 * make runEficiencia: Ejecuta ./test_Eficiencia
 * make run: Ejecuta ./main
+
+## Mas información
+Para mas información sobre el desarrollo del programa, o los resultados obtenidos, revisar el [informe](https://github.com/PodssilDev/Tareas_Taller_De_Programacion/blob/main/Tarea_4/SerranoJohn.pdf) disponible en el repositorio.

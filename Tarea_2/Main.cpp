@@ -21,7 +21,7 @@ int main(){
         cout<<"Matriz n: ";
         cout<< (i+1);
         cout << "\n";
-        costMatrix->print();
+        //costMatrix->print();
         t0 = clock();
         assignado.solve(costMatrix);
         t1 = clock();

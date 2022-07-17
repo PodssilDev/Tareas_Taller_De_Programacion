@@ -1,31 +1,51 @@
-all: test_Container_1 test_Node_1 test_Heap_1 test_Maze_1 main
+FLAGS = -O2
 
-main: main.cpp Maze.o Heap.o Container.o Node.o
-	g++ Maze.o Node.o Heap.o Container.o main.cpp -o main
+all: test_Container test_Node test_Heap test_Maze main
 
-test_Maze_1: test_Maze_1.cpp Maze.o Node.o Heap.o Container.o 
-	g++ Maze.o Node.o Heap.o Container.o test_Maze_1.cpp -o test_Maze_1
+run: main
+	./main
 
-test_Heap_1: test_Heap_1.cpp Node.o Heap.o
-	g++ Node.o Heap.o test_Heap_1.cpp -o test_Heap_1
+runMaze: test_Maze
+	./test_Maze
+	
+runContainer: test_Container
+	./test_Container
 
-test_Node_1: test_Node_1.cpp Node.o
-	g++ Node.o test_Node_1.cpp -o test_Node_1
+runHeap: test_Heap
+	./test_Heap
 
-test_Container_1: test_Container_1.cpp 	Container.o
-	g++ Container.o test_Container_1.cpp -o test_Container_1
+runNode: test_Node
+	./test_Node
+
+main: Main.cpp Maze.o Heap.o Container.o Node.o
+	g++ $(FLAGS) Maze.o Node.o Heap.o Container.o Main.cpp -o main
+
+test_Maze: test_Maze.cpp Maze.o Node.o Heap.o Container.o 
+	g++ $(FLAGS) Maze.o Node.o Heap.o Container.o test_Maze.cpp -o test_Maze
+
+test_Heap: test_Heap.cpp Node.o Heap.o
+	g++ $(FLAGS) Node.o Heap.o test_Heap.cpp -o test_Heap
+
+test_Node: test_Node.cpp Node.o
+	g++ $(FLAGS) Node.o test_Node.cpp -o test_Node
+
+test_Container: test_Container.cpp 	Container.o
+	g++ $(FLAGS) Container.o test_Container.cpp -o test_Container
 
 Container.o: Container.cpp Container.h
-	g++ -c Container.cpp
+	g++ $(FLAGS) -c Container.cpp
 
 Maze.o: Maze.cpp Maze.h
-	g++ -c Maze.cpp
+	g++ $(FLAGS) -c Maze.cpp
 
 Heap.o: Heap.cpp Heap.h
-	g++ -c Heap.cpp
+	g++ $(FLAGS) -c Heap.cpp
 
 Node.o: Node.cpp Node.h
-	g++ -c Node.cpp
+	g++ $(FLAGS) -c Node.cpp
 
 Main.o: Main.cpp
-	g++ -c Main.cpp
+	g++ $(FLAGS) -c Main.cpp
+
+clean:
+	rm -f *.o test_Node test_Container test_Heap test_Maze main 
