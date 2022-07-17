@@ -14,11 +14,11 @@ los métodos de solve para así buscar si el grafo generado tiene o no un Ciclo 
 
 ## Como ejecutar
 Se tienen 5 ejecutables:
-* test_Node: Test para la clase Node.
-* test_Heap: Test para la clase Heap.
-* test_Hamiltonian: Test para la clase Hamiltonian (1 iteracion de un grafo de 15 nodos)
-* test_Eficiencia: Test para probar la eficiencia (50 iteraciones de varios grafos de 300 nodos).
-* main: Programa principal, donde se puede probar con distintas cantidad de nodos e iteraciones.
+* [test_Node](https://github.com/PodssilDev/Tareas_Taller_De_Programacion/blob/main/Tarea_4/test_Node.cpp): Test para la clase Node.
+* [test_Heap](https://github.com/PodssilDev/Tareas_Taller_De_Programacion/blob/main/Tarea_4/test_Heap.cpp): Test para la clase Heap.
+* [test_Hamiltonian](https://github.com/PodssilDev/Tareas_Taller_De_Programacion/blob/main/Tarea_4/test_Hamiltonian.cpp): Test para la clase Hamiltonian (1 iteracion de un grafo de 15 nodos)
+* [test_Eficiencia](https://github.com/PodssilDev/Tareas_Taller_De_Programacion/blob/main/Tarea_4/test_Eficiencia.cpp): Test para probar la eficiencia (50 iteraciones de varios grafos de 300 nodos).
+* [main](https://github.com/PodssilDev/Tareas_Taller_De_Programacion/blob/main/Tarea_4/Main.cpp): Programa principal, donde se puede probar con distintas cantidad de nodos e iteraciones.
 
 Para hacer el proceso de prueba rapido, se dispone de:
 * make runNode: Ejecuta ./test_Node
