@@ -8,7 +8,7 @@ run: main
 runAssignment: test_Assignment
 	./test_Assignment
 
-runMaze: test_Cost
+runCost: test_Cost
 	./test_Cost
 	
 runContainer: test_Container
